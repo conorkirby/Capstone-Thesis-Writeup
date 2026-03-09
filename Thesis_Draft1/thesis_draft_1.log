@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  9 MAR 2026 17:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  9 MAR 2026 22:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1122,60 +1122,50 @@ File: figures/BubbleWalkZoom.png Graphic file (type png)
 Package pdftex.def Info: figures/BubbleWalkZoom.png  used on input line 23.
 (pdftex.def)             Requested size: 219.58662pt x 219.5884pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
 
+
+[10 <./figures/bubblepathwithmean.png> <./figures/Gaussian_rand_walk.png> <./figures/BubbleWalkZoom.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
-<figures/comparison_bubble_area_methods.png, id=141, 578.16pt x 433.62pt>
+<figures/comparison_bubble_area_methods.png, id=150, 578.16pt x 433.62pt>
 File: figures/comparison_bubble_area_methods.png Graphic file (type png)
 <use figures/comparison_bubble_area_methods.png>
 Package pdftex.def Info: figures/comparison_bubble_area_methods.png  used on input line 52.
 (pdftex.def)             Requested size: 224.06548pt x 168.04585pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
 
-
-[10 <./figures/bubblepathwithmean.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
-<figures/bubble_MSD_alongside_Gaussian400.png, id=152, 567.8013pt x 353.1594pt>
+
+
+[11 <./figures/comparison_bubble_area_methods.png>]
+<figures/bubble_MSD_alongside_Gaussian400.png, id=160, 567.8013pt x 353.1594pt>
 File: figures/bubble_MSD_alongside_Gaussian400.png Graphic file (type png)
 <use figures/bubble_MSD_alongside_Gaussian400.png>
 Package pdftex.def Info: figures/bubble_MSD_alongside_Gaussian400.png  used on input line 63.
 (pdftex.def)             Requested size: 336.0982pt x 209.05199pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
-<figures/displacement_distributions_1x4.png, id=155, 1428.2961pt x 339.9099pt>
+<figures/displacement_distributions_1x4.png, id=163, 1428.2961pt x 339.9099pt>
 File: figures/displacement_distributions_1x4.png Graphic file (type png)
 <use figures/displacement_distributions_1x4.png>
 Package pdftex.def Info: figures/displacement_distributions_1x4.png  used on input line 77.
 (pdftex.def)             Requested size: 448.13095pt x 106.64688pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
@@ -1183,35 +1173,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
 
 
-[11 <./figures/Gaussian_rand_walk.png> <./figures/BubbleWalkZoom.png>]
-<figures/log_returns_seperate_bubbles_2.png, id=163, 1428.537pt x 347.1369pt>
+[12 <./figures/bubble_MSD_alongside_Gaussian400.png> <./figures/displacement_distributions_1x4.png>]
+<figures/log_returns_seperate_bubbles_2.png, id=171, 1428.537pt x 347.1369pt>
 File: figures/log_returns_seperate_bubbles_2.png Graphic file (type png)
 <use figures/log_returns_seperate_bubbles_2.png>
 Package pdftex.def Info: figures/log_returns_seperate_bubbles_2.png  used on input line 86.
 (pdftex.def)             Requested size: 448.13095pt x 108.89316pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-<figures/ccdf_displacement_components_1x2.png, id=166, 1260.3888pt x 352.9185pt>
+<figures/ccdf_displacement_components_1x2.png, id=174, 1260.3888pt x 352.9185pt>
 File: figures/ccdf_displacement_components_1x2.png Graphic file (type png)
 <use figures/ccdf_displacement_components_1x2.png>
 Package pdftex.def Info: figures/ccdf_displacement_components_1x2.png  used on input line 101.
 (pdftex.def)             Requested size: 448.13095pt x 125.4781pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/ccdf_cut_scaling_1.png, id=167, 559.6107pt x 415.7934pt>
+<figures/ccdf_cut_scaling_1.png, id=175, 559.6107pt x 415.7934pt>
 File: figures/ccdf_cut_scaling_1.png Graphic file (type png)
 <use figures/ccdf_cut_scaling_1.png>
 Package pdftex.def Info: figures/ccdf_cut_scaling_1.png  used on input line 111.
 (pdftex.def)             Requested size: 219.58662pt x 163.15485pt.
-<figures/displacement_pdf_collapse_levy_fit_1.png, id=168, 559.6107pt x 415.7934pt>
+<figures/displacement_pdf_collapse_levy_fit_1.png, id=176, 559.6107pt x 415.7934pt>
 File: figures/displacement_pdf_collapse_levy_fit_1.png Graphic file (type png)
 <use figures/displacement_pdf_collapse_levy_fit_1.png>
 Package pdftex.def Info: figures/displacement_pdf_collapse_levy_fit_1.png  used on input line 117.
@@ -1225,26 +1208,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
  []
 
 
+
+[13 <./figures/log_returns_seperate_bubbles_2.png> <./figures/ccdf_displacement_components_1x2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-<figures/ccdf_cut_scaling_investigation.png, id=172, 560.5743pt x 417.4797pt>
+<figures/ccdf_cut_scaling_investigation.png, id=191, 560.5743pt x 417.4797pt>
 File: figures/ccdf_cut_scaling_investigation.png Graphic file (type png)
 <use figures/ccdf_cut_scaling_investigation.png>
 Package pdftex.def Info: figures/ccdf_cut_scaling_investigation.png  used on input line 133.
 (pdftex.def)             Requested size: 268.8813pt x 200.24783pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-
-[12 <./figures/comparison_bubble_area_methods.png>]
-<figures/c1_and_1_c2_vs_C_investigation.png, id=186, 1077.5457pt x 360.8682pt>
+[14 <./figures/ccdf_cut_scaling_1.png> <./figures/displacement_pdf_collapse_levy_fit_1.png> <./figures/ccdf_cut_scaling_investigation.png>]
+<figures/c1_and_1_c2_vs_C_investigation.png, id=205, 1077.5457pt x 360.8682pt>
 File: figures/c1_and_1_c2_vs_C_investigation.png Graphic file (type png)
 <use figures/c1_and_1_c2_vs_C_investigation.png>
 Package pdftex.def Info: figures/c1_and_1_c2_vs_C_investigation.png  used on input line 172.
 (pdftex.def)             Requested size: 448.13095pt x 150.07687pt.
+<figures/lr_volatility_acf_Brownian_1x2.png, id=206, 847.968pt x 290.7663pt>
+File: figures/lr_volatility_acf_Brownian_1x2.png Graphic file (type png)
+<use figures/lr_volatility_acf_Brownian_1x2.png>
+Package pdftex.def Info: figures/lr_volatility_acf_Brownian_1x2.png  used on input line 184.
+(pdftex.def)             Requested size: 448.13095pt x 153.66615pt.
+<figures/lr_volatility_acf_1x2.png, id=207, 846.0408pt x 295.1025pt>
+File: figures/lr_volatility_acf_1x2.png Graphic file (type png)
+<use figures/lr_volatility_acf_1x2.png>
+Package pdftex.def Info: figures/lr_volatility_acf_1x2.png  used on input line 191.
+(pdftex.def)             Requested size: 448.13095pt x 156.309pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1259,28 +1251,20 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 
 
 
-[13 <./figures/bubble_MSD_alongside_Gaussian400.png> <./figures/displacement_distributions_1x4.png>]
-<figures/displacement_overlay_shifted_peaks_invest.png, id=195, 562.5015pt x 419.166pt>
+[15 <./figures/c1_and_1_c2_vs_C_investigation.png> <./figures/lr_volatility_acf_Brownian_1x2.png>]
+<figures/displacement_overlay_shifted_peaks_invest.png, id=216, 562.5015pt x 419.166pt>
 File: figures/displacement_overlay_shifted_peaks_invest.png Graphic file (type png)
 <use figures/displacement_overlay_shifted_peaks_invest.png>
 Package pdftex.def Info: figures/displacement_overlay_shifted_peaks_invest.png  used on input line 113.
 (pdftex.def)             Requested size: 219.58662pt x 163.62758pt.
-<figures/ccdf_displacement_components_invest.png, id=196, 560.8152pt x 418.6842pt>
+<figures/ccdf_displacement_components_invest.png, id=217, 560.8152pt x 418.6842pt>
 File: figures/ccdf_displacement_components_invest.png Graphic file (type png)
 <use figures/ccdf_displacement_components_invest.png>
 Package pdftex.def Info: figures/ccdf_displacement_components_invest.png  used on input line 118.
 (pdftex.def)             Requested size: 219.58662pt x 163.93143pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[14 <./figures/log_returns_seperate_bubbles_2.png> <./figures/ccdf_displacement_components_1x2.png>]
-
-[15 <./figures/ccdf_cut_scaling_1.png> <./figures/displacement_pdf_collapse_levy_fit_1.png> <./figures/ccdf_cut_scaling_investigation.png>]
-
-[16 <./figures/c1_and_1_c2_vs_C_investigation.png> <./figures/displacement_overlay_shifted_peaks_invest.png> <./figures/ccdf_displacement_components_invest.png>] (./thesis_draft_1.aux)
+[16 <./figures/lr_volatility_acf_1x2.png> <./figures/displacement_overlay_shifted_peaks_invest.png> <./figures/ccdf_displacement_components_invest.png>] (./thesis_draft_1.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1292,18 +1276,18 @@ Package logreq Info: Writing requests to 'thesis_draft_1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26532 strings out of 473190
- 468406 string characters out of 5715800
- 1192784 words of memory out of 5000000
- 49387 multiletter control sequences out of 15000+600000
+ 26550 strings out of 473190
+ 469077 string characters out of 5715800
+ 1189943 words of memory out of 5000000
+ 49403 multiletter control sequences out of 15000+600000
  635032 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,107p,10975b,1547s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,12n,107p,10975b,1543s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathsf.pfb>
-Output written on thesis_draft_1.pdf (16 pages, 4852629 bytes).
+Output written on thesis_draft_1.pdf (16 pages, 5310221 bytes).
 PDF statistics:
- 348 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 265 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 355 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
 
