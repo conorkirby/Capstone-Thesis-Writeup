@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex thesis_draft_1"] 1773006927.34379 "thesis_draft_1.aux" "thesis_draft_1.bbl" "thesis_draft_1" 1773007104.68831 0
+["bibtex thesis_draft_1"] 1773006927.34379 "thesis_draft_1.aux" "thesis_draft_1.bbl" "thesis_draft_1" 1773072541.71705 0
   "./bibliography.bib" 1772735162.94826 1075 0ce99b272def0c5fbad012dd82043f59 ""
-  "./thesis_draft_1-blx.bib" 1773007104.41032 342 20d1170ef6c1d70c658d70e011e08dba ""
+  "./thesis_draft_1-blx.bib" 1773072541.43272 342 20d1170ef6c1d70c658d70e011e08dba ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1711143581 65510 b1f696b0241395385f422f67543c37fd ""
-  "thesis_draft_1.aux" 1773007104.40742 17296 961f91a51ca54831f4a0cc7edeed0f7d "pdflatex"
+  "thesis_draft_1.aux" 1773072541.42974 17296 961f91a51ca54831f4a0cc7edeed0f7d "pdflatex"
   (generated)
   "thesis_draft_1.bbl"
   "thesis_draft_1.blg"
   (rewritten before read)
-["pdflatex"] 1773007098.82483 "/Users/conorkirby/Documents/College Work/Capstone/Thesis_Broken_Up/thesis_draft_1.tex" "thesis_draft_1.pdf" "thesis_draft_1" 1773007104.68846 0
+["pdflatex"] 1773072535.66879 "/Users/conorkirby/Documents/College Work/Capstone/Thesis_Broken_Up/thesis_draft_1.tex" "thesis_draft_1.pdf" "thesis_draft_1" 1773072541.71721 0
   "/Users/conorkirby/Documents/College Work/Capstone/Thesis_Broken_Up/thesis_draft_1.tex" 1773006921.14116 4555 8a949da86d9a17c3744354b6062b1e06 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc" 1388795362 7013 c55cc8669071ac14036c4a0c96c16202 ""
@@ -166,7 +166,7 @@
   "chapters/03_introduction.tex" 1772631986.71464 3235 356b73b044aa4cb0512561dcda4e9f44 ""
   "chapters/04_theoreticalbackground.tex" 1772990921.59585 9593 650c261f072938e6830b2955a5a07af9 ""
   "chapters/05_compmethod.tex" 1772628957.55882 54 79ac3052590b69f2cc7137c249c5e77e ""
-  "chapters/06_resultsanddiscussion.tex" 1773007098.60373 9962 62c732549bfc99c8f4c59ef334bebd6d ""
+  "chapters/06_resultsanddiscussion.tex" 1773072535.44196 9964 d7be7ac2896838adc9e3b4126de1df91 ""
   "chapters/07_conclusion.tex" 1772631691.44812 43 e7f8f969cb3617a8b9c93a83ff786b76 ""
   "figures/BubbleWalkZoom.png" 1772736292.27244 162732 7e7332ea63684f6981c596359901e88c ""
   "figures/CCDF_collpase_snp500.png" 1772727911.59076 1191593 218ae4c814fe7265c80166984e192b7a ""
@@ -183,12 +183,12 @@
   "figures/displacement_overlay_shifted_peaks_invest.png" 1773006655.33064 343652 6742b03fb51c12c68691f97a7996dbc2 ""
   "figures/displacement_pdf_collapse_levy_fit_1.png" 1773003906.69807 191486 4f0227caaae6acebedc95cdad8a423db ""
   "figures/log_returns_seperate_bubbles_2.png" 1772993611.33829 152819 48d75ad71b120f154a959948ee94b96b ""
-  "thesis_draft_1.aux" 1773007104.40742 17296 961f91a51ca54831f4a0cc7edeed0f7d "pdflatex"
+  "thesis_draft_1.aux" 1773072541.42974 17296 961f91a51ca54831f4a0cc7edeed0f7d "pdflatex"
   "thesis_draft_1.bbl" 1773006927.41788 2077 1086532a6a8ea7de387285069b7039f5 "bibtex thesis_draft_1"
-  "thesis_draft_1.out" 1773007099.68174 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "thesis_draft_1.run.xml" 1773007104.41097 2614 3db0eb839cb4fc1fe7c94c50d2d53175 "pdflatex"
+  "thesis_draft_1.out" 1773072536.64946 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "thesis_draft_1.run.xml" 1773072541.43342 2614 3db0eb839cb4fc1fe7c94c50d2d53175 "pdflatex"
   "thesis_draft_1.tex" 1773006921.14116 4555 8a949da86d9a17c3744354b6062b1e06 ""
-  "thesis_draft_1.toc" 1773007104.41103 2097 031d6368c9fc143830b79626f7c7bc48 "pdflatex"
+  "thesis_draft_1.toc" 1773072541.43347 2097 031d6368c9fc143830b79626f7c7bc48 "pdflatex"
   (generated)
   "thesis_draft_1-blx.bib"
   "thesis_draft_1.aux"
