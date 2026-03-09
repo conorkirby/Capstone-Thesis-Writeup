@@ -1,0 +1,110 @@
+\section{Background Theory} \label{sec:theoreticalbackground}
+\subsection{Foam Physics}
+\textcolor{red}{coordination number}
+
+
+
+\subsection{Brownian Motion}
+Brownian motion refers to the random movement of particles suspended in a fluid due to the cumulative effect of many independent collisions with the surrounding particles or molecules. This phenomenon was first observed by the botanist Robert Brown in 1827, who noticed pollen grains moving erratically in water.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.95\textwidth]{/Users/conorkirby/Documents/College Work/Capstone/Thesis_Broken_Up/figures/browniandispdist.png}
+    \caption{Averaging over 1000 Brownian random walks. As expected we get a Gaussian curve for the displacement distribution (left), and worth noting the inverted parabola on the log scale (right)}
+    \label{Browndispdist}
+\end{figure}
+
+As mentioned in the introduction, since the statistical properties of Brownian motion are well known, we can use it as a sanity check to ensure our computational method is working accordingly. \textcolor{red}{\textbf{Finish later}}
+
+
+\subsection{Econophysics}
+In this section, I am going to first explain the application of these methods when analysing financial markets. Then I will explain how they intuitively can be applied to the bubble displacements to help us with our statistical analysis.
+
+\subsubsection{Log Returns}
+Suppose $s(t)$ is the price of an asset at time $t$. One can measure the price fluctuations by simply looking at the change in price over a time $\delta t$. \cite{richmond2013econophysics}
+\begin{equation}
+    \delta s(t, \delta t) = s(t+\delta t) - s(t)
+\end{equation}
+
+However, the main problem with looking at the price change in an asset is that it is indirectly affected by external economic events; recession, inflation etc. It is more useful to look at the \textbf{log returns}.
+
+\begin{equation}
+    r(t, \delta t) = \ln\left(\frac{s(t+\delta t)}{s(t)}\right) = \ln(s(t+\delta t)) - \ln(s(t))
+\end{equation}
+
+The log returns are now seen to be additive.
+\begin{equation}
+    r(t, \delta t_1 + \delta t_2) = r(t+\delta t_1, \delta t_2) + r(t, \delta t_1)
+\end{equation}
+The incorporation of an inflation factor, f(t), we get
+\begin{equation}
+    \ln\left(\frac{f(t+\delta t)s(t+\delta t)}{f(t)s(t)}\right) = r(t, \delta t) + \ln\left(\frac{f(t+\delta t)}{f(t)}\right)
+\end{equation}
+If we look at the second term, we see that if $f(t+\delta t) = f(t)$ then that term equals zero. The use of log returns takes account of inflation that remains constant over time. \cite{richmond2013econophysics}\\
+
+How this might apply to our bubbles is that we can use the log returns accountability of inflation to account for the overall growth of the bubbles in the foam over time as it coarsens. With this overall increase in bubble diameter the magnitude of the displacements increase aswell. For this reason, it is worth taking the log returns of the bubble displacements now instead so we can analyse the relative localised bubble dynamics rather than being affected by overall growth on top of that.
+
+\subsubsection{Volatility}
+In a financial market, volatility is a measure of the magnitude of price fluctuations. High volatility markets, such as cryptocurrencies, are characterised by large price swings, while low volatility markets, such as government bonds, tend to have more stable prices.\\
+
+We can define the volatility as the absolute value of the log returns \cite{richmond2013econophysics}:
+\begin{equation}
+    v(t, \delta t) = |r(t, \delta t)|
+\end{equation}
+
+This can directly be applied to our bubble displacements, intuitively applied as a measure of how strong the fluctuations in the magnitude of the bubble displacements are. We can use this to investigate whether there are periods of high volatility in the bubble motion, and whether these periods are correlated with other properties of the foam such as the coordination number or area of the bubbles.
+
+\subsubsection{Temporal Autocorrelation}
+A temporal correlation is a measure of how a variable $x$ at time $t$ is influencing its value at a time $t + \tau$. I always like the example of rolling across the room in a rolling chair. If I push off one wall while sitting in the chair, my position at that time is highly correlated with my position a second later, however that evening where I am writing my capstone thesis has nothing to do with whether I was rolling in a chair or not, in other words my position then is completely uncorrelated to my position when I rolled the chair.\\
+
+This correlation measure is given by evaluating the \textit{autocorrelation function}, $G(\tau)$, defined as \cite{richmond2013econophysics}:
+\begin{equation}
+    G(\tau) = \langle x(t)x(t+\tau) \rangle = \lim_{T \rightarrow \infty} \frac{1}{T} \int_{0}^{T} x(t)x(t+\tau)dt
+\end{equation}
+
+This can be directly applied to our bubble sample. How long to the bubble displacements stay correlated for? Is there any correlation at all after a topologicalrestructure event?
+
+
+
+\subsection{Statistical Tools}
+\subsubsection{Mean Squared Displacement}
+Mean Squared Displacement (MSD) is a measure of the average squared distance that a particle travels over a given time interval. It is commonly used in physics and chemistry to study the motion of particles in a fluid or gas. The MSD is defined as:
+\begin{equation}
+    \text{MSD}(\delta t) = \langle (\delta r(t, \delta t))^2 \rangle = \frac{1}{N} \sum_{i=1}^{N} (\delta r_i(t, \delta t))^2
+\end{equation}
+where $\delta r_i(t, \delta t)$ is the displacement of the $i$-th particle at time $t$ over a time interval $\delta t$, and $N$ is the total number of particles. The MSD can provide insight into the underlying dynamics of the system, such as whether the motion is diffusive, subdiffusive, or superdiffusive. For example, in a purely diffusive system, the MSD scales linearly with time (MSD $\propto \delta t$), while in a subdiffusive system, the MSD scales slower than linearly (MSD $\propto \delta t^\alpha$ with $\alpha < 1$), and in a superdiffusive system, the MSD scales faster than linearly ($MSD \propto \delta t^\alpha$ with $\alpha > 1$). \textcolor{red}{Rewrite Definition: tabbed through copilot suggestion}\\
+
+For Brownian motion, as described by Einstein in his 1905 paper , the MSD scaled linearly with time following the diffusion law \cite{EinsteinMSD}:
+
+\begin{equation}
+    \langle r^2 (\tau) \rangle = 2dD\tau
+\end{equation}
+
+Where $d$ is the dimension, $D$ is the diffusion coefficient, and $\tau$ is the elapsed time. It is in our interest to see if the bubble MSD follows this diffusion laws alongside Brownian Motion or if there it follows another trend.
+
+
+\subsubsection{Displacement Distributions}
+The displacement of a bubble over a time $\delta t$ is given by:
+\begin{equation}
+    \delta r(t, \delta t) = r(t+\delta t) - r(t)
+\end{equation}
+Analysing these displacements in different ways will give us insight into the underlying statistical properties of the bubble motion. In this case, we can make a displacement distribution and vary $\delta t$ to see how the distribution changes looking at different timelags, looking at every timestep, every 10 timesteps, every 100 timesteps etc.\\
+
+
+\subsubsection{Complementary Cumulative Distribution Function}
+When investigating the log returns of a financial market, a key underlying statistical property of the probability density is that if we vary $\Delta t$ the distribution scales according to a Levy distribution.\\
+
+Figure \ref{ccdf process}a is the probablility distribution functions for the log returns over different $\Delta t$, all overlayed on one plot with the axes shifted for visual purposes. The complementary cumulative distribution function (CCDF), see figure \ref{ccdf process}b is obtained by integrating the probability distribution functions (PDF) for $|x| > x$ giving the probability the log returns are greater than a certain value for each $\Delta t$ PDF curve.\\
+
+A property of scaling according to a Levy distribution is that if you take a cut at a certain probability on the CCDF curve, is that it is independent of where the cut is taken as seen in figure \ref{ccdf process}c where the cut, normalised to the $\Delta t = 1$ cut, increases linearly with $\Delta t$.\\
+
+Finally, the slope of this linear plot can be used to scale the x axis of the original plot (\ref{ccdf process}a) by plotting over the x axis, $x^\prime = x/\Delta t ^\beta$, resulting in the collapse of all PDFs onto one \textit{master curve} (Figure \ref{ccdf process}d). A Levy curve can be fit to the peak of this plot using a Levy fit parameter of $\alpha = 1/\beta$\\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/conorkirby/Documents/College Work/Capstone/Thesis_Broken_Up/figures/CCDF_collpase_snp500.png }
+    \caption{Series of figures which describes how complementary cumulative distribution functions can be use to collapse data onto a master plot. \cite{richmond2013econophysics}}
+    \label{ccdf process}
+\end{figure}
+
+It would be interesting to apply to the bubble displacements and log returns to see if they also scale according to a Levy distribution, if so, what would the scaling exponent be? If not, it is worth investigating what he underlying scaling properties are. One consideration before we perform this analysis is that a key difference between these financial markets and the foam is that as the foam coarsens the number of bubbles decrease over time, whereas there is constantly an abundance of data for the financial log returns.\\

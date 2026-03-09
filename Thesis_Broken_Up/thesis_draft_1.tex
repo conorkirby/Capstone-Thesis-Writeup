@@ -1,0 +1,124 @@
+\documentclass[paper=a4, fontsize=12pt]{scrartcl} % A4 paper and 12pt font size
+
+%\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+%\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+%\usepackage[english]{babel} % English language/hyphenation
+\usepackage{stix}
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{graphicx}% Include figure files
+\usepackage{comment}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\usepackage{hang}
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0mm}
+%colours for python snippets
+%\documentclass{article}
+\usepackage{listings}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{colortbl}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+}
+
+\lstset{style=mystyle}
+\definecolor{light-gray}{gray}{0.95}
+\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}} %python font
+\usepackage{hyperref}
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{bibliography.bib}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{csquotes}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{Draft 1: Final Year Thesis} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Using Statistical Methods from Econophysics to Analyse Bubble Motion in a Two-Dimensional Foam \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Conor Kirby} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+
+\begin{document}
+\maketitle
+add stefans name here
+\input{chapters/01_abstract.tex}
+\newpage
+\input{chapters/02_acknowledgements.tex}
+\newpage
+\tableofcontents
+\clearpage
+\input{chapters/03_introduction.tex}
+\input{chapters/04_theoreticalbackground.tex}
+\input{chapters/05_compmethod.tex}
+\input{chapters/06_resultsanddiscussion.tex}
+\input{chapters/07_conclusion.tex}
+
+\printbibliography
+
+\section{Appendix}
+\subsection{CCDF Scaling}
+\begin{figure}[h]
+    \centering
+    \begin{minipage}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/displacement_overlay_shifted_peaks_invest.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/ccdf_displacement_components_invest.png}
+    \end{minipage}
+    \caption{Bubble displacements do not scale according to Levy distribution.}
+    \label{fig:apdx_ccdfscaling}
+\end{figure}
+
+\end{document}

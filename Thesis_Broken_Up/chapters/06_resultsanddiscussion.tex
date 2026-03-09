@@ -1,0 +1,165 @@
+\section{Results and Discussion} \label{sec:resultsanddiscussion}
+
+\subsection{Bubble Paths}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/bubblepathwithmean.png}
+    \caption{Paths of the centres of the bubbles.}
+    \label{bubbleallpath}
+\end{figure}
+Figure \ref{bubbleallpath} shows the path of the centres of the bubbles during the simulation. The mean position of the bubbles is shown in the centre of the plot to investigate for an overall drift in the bubbles. Mainly, this is to prove that there is no bias in displacements in the x and y direction, so when we look at the distribution of displacements, we can combine the x and y displacements for double the data.\\
+\newpage
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/Gaussian_rand_walk.png}
+        \label{zoombrown}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/BubbleWalkZoom.png}
+        \label{zoombubble}
+    \end{minipage}
+    \caption{Comparison of a Brownian random walk (left) and a tracked bubble path (right) over the same number of timesteps.}
+    \label{fig:walk_comparison}
+\end{figure}
+Figure \ref{fig:walk_comparison}a shows a Brownian random walk over 726 steps, the same number of time steps in the foam simulation. Figure \ref{fig:walk_comparison}b shows the path of one of the bubbles which survives the full 726 timesteps. Comparing the two side by side, it is clear that the Brownian random walk is completely random, erratic, and uncorrelated. Whereas the bubble path seems slightly more structured, with some steps clustered together, when the foam is relaxed, and some large jumps then the foam is restructuring. This is a stark difference between the two, however it is worth comparing with the Brownian walk as a baseline to see how random, or what particular type of randomness, the bubble paths follow.\\
+
+
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=\textwidth]{figures/bubblepathwithmean.png}
+%     \caption{The centres of the bubbles tracked over the full simulation, some disappearing before the simulation is finished, some survive till the end. \textcolor{red}{put in appendix maybe}}
+% \end{figure}
+
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=\textwidth]{figures/bubble(MSD)_count_over_time.png}
+%     \caption{\textcolor{red}{put in appendix}}
+%     \label{survival_curve}
+% \end{figure}
+
+\subsubsection{Average Area}
+As a sanity check, the average area over time is shown to be linear in figure \textcolor{red}{figure}. This was proven in two ways. The first was using the raw diameter data and averaging that the area obtained from that over all the bubbles in that timestep, The second method used an approximation, $\langle A \rangle = A_{box}(1-\phi)/N(t)$, where $\phi$ is the liquid fraction and $N(t)$ is the number of bubbles at time t. Figure \textcolor{red}{figure} proves these two methods line up exactly.\\
+
+The key takeaway from this is that since the area is increasing linearly with time then we are losing bubbles while this is happening.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/comparison_bubble_area_methods.png}
+    \caption{Average bubble area increases linearly over time.}
+\end{figure}
+
+\subsubsection{Mean Squared Displacement}
+The mean squared displacement (MSD) was averaged over 400 Brownian random walks, and as expected scaled linearly with time. In figure \ref{fig: MSD}, this Brownian MSD line is superimposed onto the plot of the bubbles MSD over time. There are some stark differences. Initially, since I was looking for this linear relation in the bubbles I tried to convince myself there was some sort of linearity in the plot. While there certainly is an upward trend, it is definitely not linear, at least not with the amount of data we have.\\
+
+One clear distinction between the two simulations is that the number of bubbles decrease over time. This can be seen in the figure \ref{fig: MSD} with the red dashed lines marking the milestones in the bubble counts. The less data you have the less linear the plot would be regardless, this can be seen once half the bubbles have disappeared around the 260th timestep. However even when we have the most amount of bubbles, 400-300 bubbles between t=0 and t=80, this section of the plot almost looks like it follows a power law.\\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figures/bubble_MSD_alongside_Gaussian400.png}
+    \caption{Mean squared displacement for the bubble data with the MSD for 400 Brownian walks overlayed to compare linearity.}
+    \label{fig: MSD}
+\end{figure}
+
+The conclusion from this investigation is that it is hard to make any good conclusions from this analysis. For that reason, we move on to other method to analyse the statistics of this system.
+
+
+\subsubsection{Displacement Distributions} \label{sec: dispdist}
+\textcolor{red}{Brownian Baseline add later}
+The displacemnt distribution of the bubble displacements looking at every timestep ($\Delta t = 1$) has a sharp peak around 0 and tapers down each side, as seen in figure \ref{dispdist} on a log-lin scale. Comparing with the Brownian displacement curve in figure \ref{Browndispdist}, there is a stark difference between the two distributions; an inverted parabola for the Brownian motion, and a sharp peak that tapers off each side for the bubble displacements.\\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{figures/displacement_distributions_1x4.png}
+    \caption{Displacement distributions looking at different time lags. Distibutions widen towards a Gaussian distribution at larger time lags.}
+    \label{dispdist}
+\end{figure}
+
+As $\Delta t$ increases the bubble displacement distributions widen, eventually approaching a Gaussian shaped inverted parabola. This shows the uncorrelation comparing displacement at a certain timestep versus displacement a hundred or so timesteps later. There is an element of randomness which brings the Gaussian distribution into play.\\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{figures/log_returns_seperate_bubbles_2.png}
+    \caption{Log return distributions over increasing $\Delta t$. Distribution does not widen into a Gaussian unlike the displacement distributions. Log-linear scale.}
+    \label{logretdist}
+\end{figure}
+
+Investigating the log return distributions led to a different conclusion than the displacement distributions. Unlike the displacement distributions, the log return distribution does not widen into a Gaussian curve. As the distribution don't evolve into a Gaussian, section \ref{subsec: Autocorrelation} will investigate if there is an element of correlation in the log returns.\\
+
+
+\subsubsection{Complementary Cumulative Distribution Functions Collapse}
+\textcolor{red}{Brownian Baseline add later}
+
+Displacement distributions from the section \ref{sec: dispdist} were used for an initial attempt at a Complementary Cumulative Distribution Function (CCDF) collapse.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{figures/ccdf_displacement_components_1x2.png}
+    \caption{Displacement distributions overlayed on the one plot, axes shifted for visual purposes (left). These PDFs were then integrated over $|x|>x$ to get the CCDF (right).}
+    \label{label}
+\end{figure}
+
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/ccdf_cut_scaling_1.png}
+        \label{ccdfcut}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/displacement_pdf_collapse_levy_fit_1.png}
+        \label{levycoll}
+    \end{minipage}
+    \caption{Bubble displacements do not scale according to Levy distribution.}
+    \label{fig:cutandcollapse_1}
+\end{figure}
+
+A key difference between the Brownian scaling and the scaling of financial markets is that the CCDF cuts are dependent on where the cut is taken, there is not a linear relation between the cut (normalised to the first cut) versus $\Delta t$. For arguments sake, the middle slope is taken, $\beta = 0.63$ giving a relatively good collapse in figure \ref{fig:cutandcollapse_1}. The centre of the distribution collapses well, however, the tails clearly deviate from this scaling a lot.\\
+
+To investigate this scaling further, more $\Delta t$ distributions were added along with more CCDF cuts in an attempt to fit a function to these scaling properties. \textit{See appendix: figure \ref{fig:apdx_ccdfscaling}ß}\\
+
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}[c]{0.6\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/ccdf_cut_scaling_investigation.png}
+        \label{ccdfcutinvest}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{0.35\textwidth}
+        \centering
+        \label{tab:fit_params}
+        \begin{tabular}{ccc}
+            \hline
+            $C$ & $c_1$ & $c_2$ \\
+            \hline
+            0.50 & 1.240 & 0.00455 \\
+            0.45 & 1.200 & 0.00497 \\
+            0.40 & 1.160 & 0.00538 \\
+            0.35 & 1.110 & 0.00589 \\
+            0.30 & 1.080 & 0.00653 \\
+            0.25 & 1.040 & 0.00737 \\
+            0.20 & 0.998 & 0.00848 \\
+            0.15 & 0.962 & 0.01010 \\
+            0.10 & 0.920 & 0.01290 \\
+            0.05 & 0.870 & 0.01970 \\
+            0.01 & 0.829 & 0.05210 \\
+            \hline
+        \end{tabular}
+    \end{minipage}
+    \caption{Bubble displacements do not scale according to Levy distribution (left). Fitted parameters for each CCDF cut (right).}
+    \label{fig:scalinginvest}
+\end{figure}
+
+
+
+
+\subsubsection{Autocorrelation Functions}\label{subsec: Autocorrelation}
