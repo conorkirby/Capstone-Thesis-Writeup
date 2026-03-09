@@ -3,7 +3,7 @@
 \subsection{Bubble Paths}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/bubblepathwithmean.png}
+    \includegraphics[width=0.45\textwidth]{figures/bubblepathwithmean.png}
     \caption{Paths of the centres of the bubbles.}
     \label{bubbleallpath}
 \end{figure}
@@ -123,7 +123,7 @@ Displacement distributions from the section \ref{sec: dispdist} were used for an
 
 A key difference between the Brownian scaling and the scaling of financial markets is that the CCDF cuts are dependent on where the cut is taken, there is not a linear relation between the cut (normalised to the first cut) versus $\Delta t$. For arguments sake, the middle slope is taken, $\beta = 0.63$ giving a relatively good collapse in figure \ref{fig:cutandcollapse_1}. The centre of the distribution collapses well, however, the tails clearly deviate from this scaling a lot.\\
 
-To investigate this scaling further, more $\Delta t$ distributions were added along with more CCDF cuts in an attempt to fit a function to these scaling properties. \textit{See appendix: figure \ref{fig:apdx_ccdfscaling}ß}\\
+To investigate this scaling further, more $\Delta t$ distributions were added along with more CCDF cuts in an attempt to fit a function to these scaling properties. \textit{See appendix: figure \ref{fig:apdx_ccdfscaling}}. Figure \ref{fig:scalinginvest} shows the resulting scaling of each cut with $\Delta t$.\\
 
 
 \begin{figure}[h]
@@ -159,7 +159,24 @@ To investigate this scaling further, more $\Delta t$ distributions were added al
     \label{fig:scalinginvest}
 \end{figure}
 
+By process of trial and error to find a function which scales this way, equation \ref{scalefiteq} seemed the best fit.
+\begin{equation}
+    f(\Delta t) = \frac{c_1 \Delta t}{1- c_2 \Delta t}
+    \label{scalefiteq}
+\end{equation}
 
+Equation \ref{scalefiteq} uses two free parameters, $c_1$ and $c_2$, and the fit uses a least square method to obtain the corresponding $c_1$ and $c_2$ for the best fit. Each free parameter value is stored alongside the cut C that these values are associate with. Plotting $c_1$ against C and $1/c_2$ against C gives a linear relation for each as shown in figure \ref{c1c2invest}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{figures/c1_and_1_c2_vs_C_investigation.png}
+    \caption{Linear relation for scaling of $c_1$ and 1/$c_2$ with respect to C}
+    \label{c1c2invest}
+\end{figure}
+
+\textcolor{red}{given more time I am hoping to somehow use this slope and $C=0$ value to scale the displacement distribution PDFs onto one masterplot.}
+
+\textcolor{green}{Peak scaling method, appendix maybe}
 
 
 \subsubsection{Autocorrelation Functions}\label{subsec: Autocorrelation}
