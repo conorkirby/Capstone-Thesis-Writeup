@@ -62,8 +62,17 @@ This correlation measure is given by evaluating the \textit{autocorrelation func
     G(\tau) = \langle x(t)x(t+\tau) \rangle = \lim_{T \rightarrow \infty} \frac{1}{T} \int_{0}^{T} x(t)x(t+\tau)dt
 \end{equation}
 
-This can be directly applied to our bubble sample. How long to the bubble displacements stay correlated for? Is there any correlation at all after a topologicalrestructure event?
+Temporal autocorrelation can be applied in a financial market, the Dow Jones Industrial Average in this case. Figure \ref{fig:DJIA_autocorr} shows that there is no correlation in the daily return, however the autocorrelation function of the volatility follows a power law.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{figures/DJIA_auto_ret_vol.png}
+    \caption{Dow Jones Industrial Average, autocorrelation of daily returns fluctuate around zero, autocorrelation of the volatility follows a power law.}
+    \label{fig:DJIA_autocorr}
+\end{figure}
+
+
+This can be directly applied to our bubble sampleto see how long to the bubble displacements stay correlated for or if there is there any correlation at all after a topological restructure event.
 
 
 \subsection{Statistical Tools}

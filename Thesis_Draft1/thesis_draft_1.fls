@@ -387,6 +387,11 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-bo
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/stix/t1-stixgeneralsc.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-italic.tfm
+INPUT ./figures/DJIA_auto_ret_vol.png
+INPUT ./figures/DJIA_auto_ret_vol.png
+INPUT ./figures/DJIA_auto_ret_vol.png
+INPUT ./figures/DJIA_auto_ret_vol.png
+INPUT ./figures/DJIA_auto_ret_vol.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral.tfm
 INPUT /Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/CCDF_collpase_snp500.png
@@ -483,6 +488,11 @@ INPUT ./figures/ccdf_displacement_components_invest.png
 INPUT ./figures/ccdf_displacement_components_invest.png
 INPUT ./figures/ccdf_displacement_components_invest.png
 INPUT ./figures/ccdf_displacement_components_invest.png
+INPUT ./figures/dispacf.png
+INPUT ./figures/dispacf.png
+INPUT ./figures/dispacf.png
+INPUT ./figures/dispacf.png
+INPUT ./figures/dispacf.png
 INPUT thesis_draft_1.aux
 INPUT ./thesis_draft_1.out
 INPUT ./thesis_draft_1.out

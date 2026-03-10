@@ -161,7 +161,7 @@ To investigate this scaling further, more $\Delta t$ distributions were added al
 
 By process of trial and error to find a function which scales this way, equation \ref{scalefiteq} seemed the best fit.
 \begin{equation}
-    f(\Delta t) = \frac{c_1 \Delta t}{1- c_2 \Delta t}
+    f(\Delta t) = \frac{c_1 \Delta t}{1 + c_2 \Delta t}
     \label{scalefiteq}
 \end{equation}
 
@@ -182,13 +182,18 @@ Equation \ref{scalefiteq} uses two free parameters, $c_1$ and $c_2$, and the fit
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{figures/lr_volatility_acf_Brownian_1x2.png}
-    \caption{As expected, Brownian Autocorrelation in both log-returns and volatility fluctuate around zero}
+    \caption{There is no correlation in Brownian motion, log returns or volatility in this case, as it is the baseline example of pure randomness}
     \label{fig:brownacf}
 \end{figure}
+As expected, the Brownian log return and volatility autocorrlation functions drop straight to zero and fluctuate there for the rest of the simulation.\\
+
+Figure \ref{fig:dispacf} in the appendix shows the autocorrelation function for the displacement of the bubbles, as expected there is no correlation. More interestingly, the autocorrelation function for the log returns is always positive, as seen in figure \ref{fig:lrvolacf} (left). It is hard to conclude the exact physical intuition behind this but it is a key finding in this investigation nonetheless as it is unexpected that it is correlated like this.\\
+
+Figure \ref{fig:lrvolacf} (right) shows the autocorrelation of the volatility. The trend follows a power law of $\tau^{-0/4}$ and quickly drops to zero towards the end. This can be related back to figure \ref{fig:DJIA_autocorr}. The volatility autocorrelation function seems to follow a similar sort of trend, however where the DJIA differs is that the daily returns fluctuate around zero whereas the log return autocorrelation function is always slightly positive.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{figures/lr_volatility_acf_1x2.png}
-    \caption{caption}
+    \caption{Log return ACF unexpectedly stays ever so slightly positive, the volatility ACF follows a power law trend that can be linked back to the DJIA figure \ref{fig:DJIA_autocorr}.}
     \label{fig:lrvolacf}
 \end{figure}
