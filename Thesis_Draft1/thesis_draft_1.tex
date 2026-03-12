@@ -1,4 +1,6 @@
 \documentclass[paper=a4, fontsize=12pt]{scrartcl} % A4 paper and 12pt font size
+%\usepackage{setspace}
+%\onehalfspacing
 
 %\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 %\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
@@ -8,6 +10,7 @@
 \usepackage{graphicx}% Include figure files
 \usepackage{comment}
 \usepackage{sectsty} % Allows customizing section commands
+\usepackage{float}
 \allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
 
 \usepackage{fancyhdr} % Custom headers and footers
@@ -82,14 +85,15 @@
 \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
 }
 
-\author{Conor Kirby} % Your name
+\author{Conor Kirby \\[5pt]
+\normalsize Supervisor: Professor Stefan Hutzler} % Your name
 
 \date{\normalsize\today} % Today's date or a custom date
 
 
 \begin{document}
 \maketitle
-add stefans name here
+\newpage
 \input{chapters/01_abstract.tex}
 \newpage
 \input{chapters/02_acknowledgements.tex}
@@ -100,13 +104,121 @@ add stefans name here
 \input{chapters/04_theoreticalbackground.tex}
 \input{chapters/05_compmethod.tex}
 \input{chapters/06_resultsanddiscussion.tex}
+\newpage
 \input{chapters/07_conclusion.tex}
 
 \printbibliography
 
-\section{Appendix}
-\subsection{CCDF Scaling}
-\begin{figure}[h]
+\section{Appendix A: Computational Method}
+\subsection*{Data Sample}
+\begin{lstlisting}[
+language=Python,
+caption={Sample of foam simulation data (first 6 of 400 bubbles for the first timestep)},
+label={lst:datasample}
+]
+    #400 bubbles
+    #width=20.203051, height=20.203051, time =1
+    ###vcentrex= 10.039337, vcentrey= 10.434378, vcentreAx= 10.000768, vcentreAy= 10.350760, bcentrex= 10.584868, bcentrey= 10.863349, bcentreAx= 10.790131, bcentreAy= 10.862649
+    #id,,x,y,area,pressure,Z
+    1 16.830467 10.024328 1.505199 1.051348 16
+    2 10.836769 7.222546 0.273170 2.395116 5
+    3 8.349003 1.681417 1.030034 1.177891 9
+    4 1.364649 6.059485 0.298862 2.014220 5
+    5 1.334989 3.429860 0.151537 3.716496 4
+    6 9.045682 19.629107 0.385979 2.093547 5
+    ...
+\end{lstlisting}
+
+\subsection*{Autocorrelation Code}
+\begin{lstlisting}[
+language=Python,
+caption={Calculating the normalised autocorrelation function},
+label={lst:acfcode}
+]
+def scalar_acf_direct_nonstationary(x, max_lag=None):
+    x = np.asarray(x, dtype=float)
+    n = len(x)
+    if max_lag is None or max_lag > n - 1:
+        max_lag = n - 1
+
+    x = x - x.mean()
+
+    acf = np.empty(max_lag + 1, dtype=float)
+    for tau in range(max_lag + 1):
+        x_t   = x[:n - tau]
+        x_t_tau = x[tau:]
+
+        sigma_t     = np.std(x_t)
+        sigma_t_tau = np.std(x_t_tau)
+
+        denom = sigma_t * sigma_t_tau
+        if denom == 0:
+            acf[tau] = 0.0
+        else:
+            acf[tau] = np.mean(x_t * x_t_tau) / denom
+    return acf
+\end{lstlisting}
+
+
+\section{Appendix B: Results}
+\subsection*{Mean Squared Displacement}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/100vs400_MSD.png}
+    \caption{MSD for Brownian walks. Dimensionless axes allow the plot to be independent of simulation parameters and give a slope of 2 as per the diffusion law $\langle r^2 \rangle = 2Dt$. Averaging over both 100 and 400 walks to show the effect of lack of sample size on the statistics.}
+    \label{fig:100vs400}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/bubble(MSD)_count_over_time.png}
+    \caption{Survival curve of bubbles over the duration of the simulation with milestones marked.}
+    \label{fig:survcurv}
+\end{figure}
+
+\subsection*{CCDF Scaling}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/Brownian_CCDF_Collapse_1.png}
+    \caption{Brownian Distributions Overlayed}
+    \label{fig:BrownCCDF1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/ccdf_logreturns_1.png}
+    \caption{Log return distributions and CCDF curve as procedure}
+    \label{fig:lr_collapse_1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/logreturn_ccdf_collapse2.png}
+    \caption{Log returns follow the same CCDF scaling as the displacements}
+    \label{fig:lr_collapse_2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/Brownian_CCDF_Collapse_2.png}
+    \caption{CCDF for Brownian Displacement Distibutions and Log-Returns Distibutions}
+    \label{fig:BrownCCDF2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/Brownian_CCDF_Collapse_3.png}
+    \caption{CCDF scaling for Brownian, both displacements and log returns scale as expected with an exponent of $\beta = 0.5$}
+    \label{fig:BrownCCDF3}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/Brownian_CCDF_Collapse_4.png}
+    \caption{Using $\beta = 0.5$ slope to scale the x axis of the original distribution plots, all distributions collaps onto the one master plot as intended}
+    \label{fig:BrownCCDF4}
+\end{figure}
+
+\begin{figure}[H]
     \centering
     \begin{minipage}[t]{0.49\textwidth}
         \centering
@@ -119,14 +231,6 @@ add stefans name here
     \end{minipage}
     \caption{Bubble displacements do not scale according to Levy distribution.}
     \label{fig:apdx_ccdfscaling}
-\end{figure}
-
-\subsection{Autocorrelation Functions}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{figures/dispacf.png}
-    \caption{Slightly negative correlation in the bubble displacements, however fluctuates around zero mostly as expected }
-    \label{fig:dispacf}
 \end{figure}
 
 \end{document}

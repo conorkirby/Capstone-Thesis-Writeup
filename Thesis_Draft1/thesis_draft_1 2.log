@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  12 MAR 2026 01:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  12 MAR 2026 00:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -804,7 +804,8 @@ Package csquotes Info: ... none found.
 LaTeX Font Info:    Trying to load font information for T1+stix on input line 94.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/stix/t1stix.fd
 File: t1stix.fd 2015/04/17 v1.1.2-latex STIX T1 font definitions
-) (./thesis_draft_1.aux)
+)
+No file thesis_draft_1.aux.
 \openout1 = `thesis_draft_1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
@@ -823,7 +824,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
 LaTeX Font Info:    ... okay on input line 94.
 LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 94.
 LaTeX Font Info:    Trying to load font information for LS1+stix on input line 94.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/stix/ls1stix.fd
+(/usr/local/texlive/2025/texmf-dist/tex/latex/stix/ls1stix.fd
 File: ls1stix.fd 2015/04/17 v1.1.2-latex STIX LS1 font definitions
 )
 LaTeX Font Info:    ... okay on input line 94.
@@ -872,7 +873,6 @@ Package tocbasic Info: omitting babel extension for `lol'
 (tocbasic)             because of missing \bbl@set@language on input line 94.
 \scr@dte@lstlisting@maxnumwidth=\skip114
 Package hyperref Info: Link coloring OFF on input line 94.
- (./thesis_draft_1.out) (./thesis_draft_1.out)
 \@outlinefile=\write5
 \openout5 = `thesis_draft_1.out'.
 
@@ -943,12 +943,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 96.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-[1
-
-
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}] (./chapters/01_abstract.tex
+) (./chapters/01_abstract.tex
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
@@ -956,9 +951,12 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input line 1.
 
-)
+) (./chapters/02_acknowledgements.tex
 
-[2] (./chapters/02_acknowledgements.tex
+[1
+
+
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}]
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
@@ -993,21 +991,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
 )
 
-[3]
+[2]
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 101.
+(scrartcl)              This could result in several error messages on input line 99.
 
-(./thesis_draft_1.toc)
+No file thesis_draft_1.toc.
 \tf@toc=\write6
 \openout6 = `thesis_draft_1.toc'.
 
 
 
-[4{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./chapters/03_introduction.tex
+[3] (./chapters/03_introduction.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
@@ -1027,19 +1025,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
+
+LaTeX Warning: Reference `sec:theoreticalbackground' on page 4 undefined on input line 10.
+
+
+LaTeX Warning: Reference `sec:compmethod' on page 4 undefined on input line 10.
+
+
+LaTeX Warning: Reference `sec:resultsanddiscussion' on page 4 undefined on input line 10.
+
+
+LaTeX Warning: Reference `sec:conclusion' on page 4 undefined on input line 10.
+
 ) (./chapters/04_theoreticalbackground.tex
 
-[5
+[4
 
 ]
-</Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/browniandispdist.png, id=94, 1394.20876pt x 595.22375pt>
+</Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/browniandispdist.png, id=29, 1394.20876pt x 595.22375pt>
 File: /Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/browniandispdist.png Graphic file (type png)
 <use /Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/browniandispdist.png>
 Package pdftex.def Info: /Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/browniandispdist.png  used on input line 8.
 (pdftex.def)             Requested size: 425.72302pt x 181.74733pt.
 
 
-[6 </Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/browniandispdist.png>]
+[5 </Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/browniandispdist.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
@@ -1056,12 +1066,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
 
 
-[7]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
  []
 
-<figures/DJIA_auto_ret_vol.png, id=120, 733.74126pt x 288.07625pt>
+
+LaTeX Warning: Reference `fig:DJIA_autocorr' on page 7 undefined on input line 64.
+
+<figures/DJIA_auto_ret_vol.png, id=58, 733.74126pt x 288.07625pt>
 File: figures/DJIA_auto_ret_vol.png Graphic file (type png)
 <use figures/DJIA_auto_ret_vol.png>
 Package pdftex.def Info: figures/DJIA_auto_ret_vol.png  used on input line 68.
@@ -1073,7 +1086,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
 
 
-[8 <./figures/DJIA_auto_ret_vol.png>]
+[7 <./figures/DJIA_auto_ret_vol.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
@@ -1084,14 +1097,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
  []
 
 
+LaTeX Warning: Reference `ccdf process' on page 8 undefined on input line 105.
+
+
+LaTeX Warning: Reference `ccdf process' on page 8 undefined on input line 105.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 
+LaTeX Warning: Reference `ccdf process' on page 8 undefined on input line 107.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
+
+
+LaTeX Warning: Reference `ccdf process' on page 8 undefined on input line 109.
+
+
+LaTeX Warning: Reference `ccdf process' on page 8 undefined on input line 109.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 109--110
@@ -1100,8 +1128,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
 
 
-[9]
-</Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/CCDF_collpase_snp500.png, id=146, 632.3625pt x 392.46625pt>
+[8]
+</Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/CCDF_collpase_snp500.png, id=83, 632.3625pt x 392.46625pt>
 File: /Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/CCDF_collpase_snp500.png Graphic file (type png)
 <use /Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/CCDF_collpase_snp500.png>
 Package pdftex.def Info: /Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/CCDF_collpase_snp500.png  used on input line 113.
@@ -1112,6 +1140,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--1
  []
 
 
+LaTeX Warning: Reference `lst:datasample' on page 9 undefined on input line 3.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -1120,12 +1151,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
 
-[10 </Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/CCDF_collpase_snp500.png>]
+[9 </Users/conorkirby/Documents/College Work/Capstone/Thesis_Draft1/figures/CCDF_collpase_snp500.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-<figures/bubble_paths_unfixed.png, id=159, 578.16pt x 578.16pt>
+
+LaTeX Warning: Reference `fig:path-unfixed' on page 10 undefined on input line 20.
+
+
+LaTeX Warning: Reference `bubbleallpath' on page 10 undefined on input line 21.
+
+<figures/bubble_paths_unfixed.png, id=94, 578.16pt x 578.16pt>
 File: figures/bubble_paths_unfixed.png Graphic file (type png)
 <use figures/bubble_paths_unfixed.png>
 Package pdftex.def Info: figures/bubble_paths_unfixed.png  used on input line 26.
@@ -1152,10 +1189,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
 
 
-[11 <./figures/bubble_paths_unfixed.png>]
+[10{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./figures/bubble_paths_unfixed.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
+
+
+LaTeX Warning: Reference `fig:survcurv' on page 11 undefined on input line 40.
+
+
+LaTeX Warning: Reference `fig: MSD' on page 11 undefined on input line 40.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
@@ -1163,18 +1206,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
  []
 
 
+LaTeX Warning: Reference `eq:lr_def' on page 11 undefined on input line 43.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-<figures/x_y_combination_proof.png, id=181, 578.16pt x 578.16pt>
+
+LaTeX Warning: Reference `fig:xycombine' on page 11 undefined on input line 50.
+
+<figures/x_y_combination_proof.png, id=112, 578.16pt x 578.16pt>
 File: figures/x_y_combination_proof.png Graphic file (type png)
 <use figures/x_y_combination_proof.png>
 Package pdftex.def Info: figures/x_y_combination_proof.png  used on input line 55.
 (pdftex.def)             Requested size: 215.10094pt x 215.09799pt.
 
 
-[12]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
@@ -1190,204 +1239,369 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--67
  []
 
 
+LaTeX Warning: Reference `fig:cutandcollapse_1' on page 12 undefined on input line 68.
+
+
+LaTeX Warning: Reference `ccdfcutinvest' on page 12 undefined on input line 68.
+
+
+LaTeX Warning: Reference `eq:scalefiteq' on page 12 undefined on input line 68.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
 
 
-[13 <./figures/x_y_combination_proof.png>]
+[12 <./figures/x_y_combination_proof.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
+
+LaTeX Warning: Reference `sec:temp_acf_def' on page 13 undefined on input line 73.
+
+
+LaTeX Warning: Reference `eq:norm_acf' on page 13 undefined on input line 73.
+
+
+LaTeX Warning: Reference `lst:acfcode' on page 13 undefined on input line 73.
+
 ) (./chapters/06_resultsanddiscussion.tex
-<figures/bubblepathwithmean.png, id=204, 433.62pt x 433.62pt>
+
+./chapters/06_resultsanddiscussion.tex:6: LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6     \begin{subfigure}
+                         {0.45\textwidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./chapters/06_resultsanddiscussion.tex:6: Missing number, treated as zero.
+<to be read again> 
+                   }
+l.6     \begin{subfigure}{0.45\textwidth}
+                                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./chapters/06_resultsanddiscussion.tex:6: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.6     \begin{subfigure}{0.45\textwidth}
+                                         
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+LaTeX Warning: Reference `bubbleallpath' on page 13 undefined on input line 7.
+
+
+./chapters/06_resultsanddiscussion.tex:8: LaTeX Error: \begin{figure} on input line 4 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8     \end{subfigure}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./chapters/06_resultsanddiscussion.tex:10: LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     \begin{subfigure}
+                          {0.45\textwidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./chapters/06_resultsanddiscussion.tex:10: Missing number, treated as zero.
+<to be read again> 
+                   }
+l.10     \begin{subfigure}{0.45\textwidth}
+                                          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./chapters/06_resultsanddiscussion.tex:10: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.10     \begin{subfigure}{0.45\textwidth}
+                                          
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<figures/bubblepathwithmean.png, id=130, 433.62pt x 433.62pt>
 File: figures/bubblepathwithmean.png Graphic file (type png)
 <use figures/bubblepathwithmean.png>
-Package pdftex.def Info: figures/bubblepathwithmean.png  used on input line 6.
+Package pdftex.def Info: figures/bubblepathwithmean.png  used on input line 12.
 (pdftex.def)             Requested size: 201.65755pt x 201.65768pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+./chapters/06_resultsanddiscussion.tex:15: LaTeX Error: \begin{figure} on input line 4 ended by \end{subfigure}.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15     \end{subfigure}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-
-
-[14 <./figures/bubblepathwithmean.png>]
-<figures/Gaussian_rand_walk.png, id=214, 433.62pt x 433.62pt>
+<figures/Gaussian_rand_walk.png, id=131, 433.62pt x 433.62pt>
 File: figures/Gaussian_rand_walk.png Graphic file (type png)
 <use figures/Gaussian_rand_walk.png>
-Package pdftex.def Info: figures/Gaussian_rand_walk.png  used on input line 17.
+Package pdftex.def Info: figures/Gaussian_rand_walk.png  used on input line 23.
 (pdftex.def)             Requested size: 219.58662pt x 219.5884pt.
-<figures/BubbleWalkZoom.png, id=215, 433.62pt x 433.62pt>
+<figures/BubbleWalkZoom.png, id=132, 433.62pt x 433.62pt>
 File: figures/BubbleWalkZoom.png Graphic file (type png)
 <use figures/BubbleWalkZoom.png>
-Package pdftex.def Info: figures/BubbleWalkZoom.png  used on input line 23.
+Package pdftex.def Info: figures/BubbleWalkZoom.png  used on input line 29.
 (pdftex.def)             Requested size: 219.58662pt x 219.5884pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:walk_comparison' on page 13 undefined on input line 35.
+
+
+LaTeX Warning: Reference `fig:walk_comparison' on page 13 undefined on input line 35.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+[13 <./figures/bubblepathwithmean.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-<figures/comparison_bubble_area_methods.png, id=220, 578.16pt x 433.62pt>
+<figures/comparison_bubble_area_methods.png, id=143, 578.16pt x 433.62pt>
 File: figures/comparison_bubble_area_methods.png Graphic file (type png)
 <use figures/comparison_bubble_area_methods.png>
-Package pdftex.def Info: figures/comparison_bubble_area_methods.png  used on input line 52.
+Package pdftex.def Info: figures/comparison_bubble_area_methods.png  used on input line 58.
 (pdftex.def)             Requested size: 224.06548pt x 168.04585pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/bubble_MSD_alongside_Gaussian400.png, id=222, 495.5313pt x 425.1885pt>
+
+LaTeX Warning: Reference `fig: MSD' on page 14 undefined on input line 66.
+
+<figures/bubble_MSD_alongside_Gaussian400.png, id=144, 495.5313pt x 425.1885pt>
 File: figures/bubble_MSD_alongside_Gaussian400.png Graphic file (type png)
 <use figures/bubble_MSD_alongside_Gaussian400.png>
-Package pdftex.def Info: figures/bubble_MSD_alongside_Gaussian400.png  used on input line 66.
-(pdftex.def)             Requested size: 237.50885pt x 203.7962pt.
+Package pdftex.def Info: figures/bubble_MSD_alongside_Gaussian400.png  used on input line 71.
+(pdftex.def)             Requested size: 219.58662pt x 188.42001pt.
+
+Underfull \hbox (badness 2762) in paragraph at lines 72--72
+[][][]\T1/stix/m/n/12 Mean squared dis-place-ment for
+ []
 
 
-[15 <./figures/Gaussian_rand_walk.png> <./figures/BubbleWalkZoom.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+[14 <./figures/Gaussian_rand_walk.png> <./figures/BubbleWalkZoom.png>]
+
+LaTeX Warning: Reference `fig: MSD' on page 15 undefined on input line 77.
+
+
+LaTeX Warning: Reference `fig:100vs400' on page 15 undefined on input line 77.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 
 
-[16 <./figures/comparison_bubble_area_methods.png> <./figures/bubble_MSD_alongside_Gaussian400.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+[15 <./figures/comparison_bubble_area_methods.png> <./figures/bubble_MSD_alongside_Gaussian400.png>]
+
+LaTeX Warning: Reference `dispdist' on page 16 undefined on input line 83.
+
+
+LaTeX Warning: Reference `Browndispdist' on page 16 undefined on input line 83.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-<figures/displacement_distributions_1x4.png, id=242, 1428.2961pt x 339.9099pt>
+<figures/displacement_distributions_1x4.png, id=163, 1428.2961pt x 339.9099pt>
 File: figures/displacement_distributions_1x4.png Graphic file (type png)
 <use figures/displacement_distributions_1x4.png>
-Package pdftex.def Info: figures/displacement_distributions_1x4.png  used on input line 82.
+Package pdftex.def Info: figures/displacement_distributions_1x4.png  used on input line 87.
 (pdftex.def)             Requested size: 448.13095pt x 106.64688pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
-<figures/log_returns_seperate_bubbles_2.png, id=243, 1428.537pt x 347.1369pt>
+<figures/log_returns_seperate_bubbles_2.png, id=164, 1428.537pt x 347.1369pt>
 File: figures/log_returns_seperate_bubbles_2.png Graphic file (type png)
 <use figures/log_returns_seperate_bubbles_2.png>
-Package pdftex.def Info: figures/log_returns_seperate_bubbles_2.png  used on input line 91.
+Package pdftex.def Info: figures/log_returns_seperate_bubbles_2.png  used on input line 96.
 (pdftex.def)             Requested size: 448.13095pt x 108.89316pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+LaTeX Warning: Reference `subsec: Autocorrelation' on page 16 undefined on input line 101.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
 
 
-[17 <./figures/displacement_distributions_1x4.png> <./figures/log_returns_seperate_bubbles_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+[16 <./figures/displacement_distributions_1x4.png> <./figures/log_returns_seperate_bubbles_2.png>]
+
+LaTeX Warning: Reference `fig:BrownCCDF1' on page 17 undefined on input line 105.
+
+
+LaTeX Warning: Reference `fig:BrownCCDF4' on page 17 undefined on input line 105.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-<figures/ccdf_displacement_components_1x2.png, id=257, 1260.3888pt x 352.9185pt>
+
+LaTeX Warning: Reference `sec: dispdist' on page 17 undefined on input line 107.
+
+<figures/ccdf_displacement_components_1x2.png, id=175, 1260.3888pt x 352.9185pt>
 File: figures/ccdf_displacement_components_1x2.png Graphic file (type png)
 <use figures/ccdf_displacement_components_1x2.png>
-Package pdftex.def Info: figures/ccdf_displacement_components_1x2.png  used on input line 106.
+Package pdftex.def Info: figures/ccdf_displacement_components_1x2.png  used on input line 111.
 (pdftex.def)             Requested size: 448.13095pt x 125.4781pt.
-<figures/ccdf_cut_scaling_1.png, id=258, 559.6107pt x 415.7934pt>
+<figures/ccdf_cut_scaling_1.png, id=176, 559.6107pt x 415.7934pt>
 File: figures/ccdf_cut_scaling_1.png Graphic file (type png)
 <use figures/ccdf_cut_scaling_1.png>
-Package pdftex.def Info: figures/ccdf_cut_scaling_1.png  used on input line 116.
+Package pdftex.def Info: figures/ccdf_cut_scaling_1.png  used on input line 121.
 (pdftex.def)             Requested size: 219.58662pt x 163.15485pt.
-<figures/displacement_pdf_collapse_levy_fit_1.png, id=259, 559.6107pt x 415.7934pt>
+<figures/displacement_pdf_collapse_levy_fit_1.png, id=177, 559.6107pt x 415.7934pt>
 File: figures/displacement_pdf_collapse_levy_fit_1.png Graphic file (type png)
 <use figures/displacement_pdf_collapse_levy_fit_1.png>
-Package pdftex.def Info: figures/displacement_pdf_collapse_levy_fit_1.png  used on input line 122.
+Package pdftex.def Info: figures/displacement_pdf_collapse_levy_fit_1.png  used on input line 127.
 (pdftex.def)             Requested size: 219.58662pt x 163.15485pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+LaTeX Warning: Reference `fig:cutandcollapse_1' on page 17 undefined on input line 134.
+
+
+LaTeX Warning: Reference `fig:cutandcollapse_1' on page 17 undefined on input line 134.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
 
 
-[18 <./figures/ccdf_displacement_components_1x2.png> <./figures/ccdf_cut_scaling_1.png> <./figures/displacement_pdf_collapse_levy_fit_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+[17 <./figures/ccdf_displacement_components_1x2.png> <./figures/ccdf_cut_scaling_1.png> <./figures/displacement_pdf_collapse_levy_fit_1.png>]
+
+LaTeX Warning: Reference `fig:apdx_ccdfscaling' on page 18 undefined on input line 136.
+
+
+LaTeX Warning: Reference `fig:scalinginvest' on page 18 undefined on input line 136.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
-
- []
-
-<figures/ccdf_cut_scaling_investigation.png, id=277, 560.5743pt x 417.4797pt>
+<figures/ccdf_cut_scaling_investigation.png, id=189, 560.5743pt x 417.4797pt>
 File: figures/ccdf_cut_scaling_investigation.png Graphic file (type png)
 <use figures/ccdf_cut_scaling_investigation.png>
-Package pdftex.def Info: figures/ccdf_cut_scaling_investigation.png  used on input line 140.
+Package pdftex.def Info: figures/ccdf_cut_scaling_investigation.png  used on input line 143.
 (pdftex.def)             Requested size: 268.8813pt x 200.24783pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
+LaTeX Warning: Reference `scalefiteq' on page 18 undefined on input line 172.
 
- []
 
-<figures/c1_and_1_c2_vs_C_investigation.png, id=281, 1077.5457pt x 360.8682pt>
+LaTeX Warning: Reference `eq:scalefiteq' on page 18 undefined on input line 178.
+
+
+LaTeX Warning: Reference `c1c2invest' on page 18 undefined on input line 178.
+
+<figures/c1_and_1_c2_vs_C_investigation.png, id=190, 1077.5457pt x 360.8682pt>
 File: figures/c1_and_1_c2_vs_C_investigation.png Graphic file (type png)
 <use figures/c1_and_1_c2_vs_C_investigation.png>
-Package pdftex.def Info: figures/c1_and_1_c2_vs_C_investigation.png  used on input line 179.
+Package pdftex.def Info: figures/c1_and_1_c2_vs_C_investigation.png  used on input line 182.
 (pdftex.def)             Requested size: 448.13095pt x 150.07687pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19 <./figures/ccdf_cut_scaling_investigation.png>]
-<figures/lr_volatility_acf_Brownian_1x2.png, id=295, 847.968pt x 290.7663pt>
+
+LaTeX Warning: Reference `c1c2invest' on page 18 undefined on input line 187.
+
+
+
+[18 <./figures/ccdf_cut_scaling_investigation.png>]
+<figures/lr_volatility_acf_Brownian_1x2.png, id=200, 847.968pt x 290.7663pt>
 File: figures/lr_volatility_acf_Brownian_1x2.png Graphic file (type png)
 <use figures/lr_volatility_acf_Brownian_1x2.png>
-Package pdftex.def Info: figures/lr_volatility_acf_Brownian_1x2.png  used on input line 198.
+Package pdftex.def Info: figures/lr_volatility_acf_Brownian_1x2.png  used on input line 201.
 (pdftex.def)             Requested size: 448.13095pt x 153.66615pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
 
-Underfull \hbox (badness 3849) in paragraph at lines 207--208
-[]\T1/stix/m/n/12 Figure []4.12[] shows the au-to-cor-re-la-tion
+LaTeX Warning: Reference `fig:dispacf' on page 19 undefined on input line 207.
+
+
+LaTeX Warning: Reference `fig:lrvolacf' on page 19 undefined on input line 207.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
  []
 
 
-Underfull \hbox (badness 2460) in paragraph at lines 207--208
-\T1/stix/m/n/12 bles, as ex-pected there is no cor-re-la-
- []
-
-<figures/dispacf.png, id=298, 578.16pt x 433.62pt>
-File: figures/dispacf.png Graphic file (type png)
-<use figures/dispacf.png>
-Package pdftex.def Info: figures/dispacf.png  used on input line 212.
-(pdftex.def)             Requested size: 224.06548pt x 168.04585pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--213
-[][][]\T1/stix/m/n/12 Bubble dis-place-ments re-main
- []
+LaTeX Warning: Reference `fig:lrvolacf' on page 19 undefined on input line 209.
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 213--213
-\T1/stix/m/n/12 rel-a-tively un-cor-re-lated, ever so
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `fig:DJIA_autocorr' on page 19 undefined on input line 209.
 
 
 
-[20 <./figures/c1_and_1_c2_vs_C_investigation.png> <./figures/lr_volatility_acf_Brownian_1x2.png>]
-<figures/lr_volatility_acf_1x2.png, id=310, 846.0408pt x 295.1025pt>
+[19 <./figures/c1_and_1_c2_vs_C_investigation.png> <./figures/lr_volatility_acf_Brownian_1x2.png>]
+<figures/lr_volatility_acf_1x2.png, id=211, 846.0408pt x 295.1025pt>
 File: figures/lr_volatility_acf_1x2.png Graphic file (type png)
 <use figures/lr_volatility_acf_1x2.png>
-Package pdftex.def Info: figures/lr_volatility_acf_1x2.png  used on input line 222.
+Package pdftex.def Info: figures/lr_volatility_acf_1x2.png  used on input line 213.
 (pdftex.def)             Requested size: 448.13095pt x 156.309pt.
-)
 
-[21 <./figures/dispacf.png> <./figures/lr_volatility_acf_1x2.png>] (./chapters/07_conclusion.tex
+
+LaTeX Warning: Reference `fig:DJIA_autocorr' on page 20 undefined on input line 214.
+
+
+LaTeX Warning: Reference `fig:DJIA_autocorr' on page 20 undefined on input line 214.
+
+) (./chapters/07_conclusion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
@@ -1408,6 +1622,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
  []
 
 
+
+[20 <./figures/lr_volatility_acf_1x2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
@@ -1423,131 +1639,149 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input line 107.
+
+
+Class scrartcl Warning: Incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input line 110.
 
 
 
-[22]
+[21]
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 113.
+(scrartcl)              This could result in several error messages on input line 129.
 
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 132.
+(scrartcl)              This could result in several error messages on input line 161.
 
-
-
-[23]
-
-Class scrartcl Warning: Incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 164.
-
-<figures/100vs400_MSD.png, id=355, 462.528pt x 346.896pt>
+<figures/100vs400_MSD.png, id=230, 462.528pt x 346.896pt>
 File: figures/100vs400_MSD.png Graphic file (type png)
 <use figures/100vs400_MSD.png>
-Package pdftex.def Info: figures/100vs400_MSD.png  used on input line 167.
+Package pdftex.def Info: figures/100vs400_MSD.png  used on input line 164.
 (pdftex.def)             Requested size: 448.13095pt x 336.11288pt.
-<figures/bubble(MSD)_count_over_time.png, id=356, 578.16pt x 361.35pt>
+<figures/bubble(MSD)_count_over_time.png, id=231, 578.16pt x 361.35pt>
 File: figures/bubble(MSD)_count_over_time.png Graphic file (type png)
 <use figures/bubble(MSD)_count_over_time.png>
-Package pdftex.def Info: figures/bubble(MSD)_count_over_time.png  used on input line 173.
+Package pdftex.def Info: figures/bubble(MSD)_count_over_time.png  used on input line 170.
 (pdftex.def)             Requested size: 448.13095pt x 280.08195pt.
 
 
-[24]
+[22]
 
-[25 <./figures/100vs400_MSD.png>]
+[23 <./figures/100vs400_MSD.png>]
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 178.
+(scrartcl)              This could result in several error messages on input line 175.
 
-<figures/Brownian_CCDF_Collapse_1.png, id=384, 920.9607pt x 349.305pt>
+<figures/Brownian_CCDF_Collapse_1.png, id=282, 920.9607pt x 349.305pt>
 File: figures/Brownian_CCDF_Collapse_1.png Graphic file (type png)
 <use figures/Brownian_CCDF_Collapse_1.png>
-Package pdftex.def Info: figures/Brownian_CCDF_Collapse_1.png  used on input line 181.
+Package pdftex.def Info: figures/Brownian_CCDF_Collapse_1.png  used on input line 178.
 (pdftex.def)             Requested size: 448.13095pt x 169.97235pt.
-<figures/ccdf_logreturns_1.png, id=385, 970.3452pt x 352.9185pt>
-File: figures/ccdf_logreturns_1.png Graphic file (type png)
-<use figures/ccdf_logreturns_1.png>
-Package pdftex.def Info: figures/ccdf_logreturns_1.png  used on input line 188.
-(pdftex.def)             Requested size: 448.13095pt x 162.99068pt.
-
-
-[26 <./figures/bubble(MSD)_count_over_time.png> <./figures/Brownian_CCDF_Collapse_1.png>]
-<figures/logreturn_ccdf_collapse2.png, id=393, 923.6106pt x 354.6048pt>
-File: figures/logreturn_ccdf_collapse2.png Graphic file (type png)
-<use figures/logreturn_ccdf_collapse2.png>
-Package pdftex.def Info: figures/logreturn_ccdf_collapse2.png  used on input line 195.
-(pdftex.def)             Requested size: 448.13095pt x 172.05345pt.
-<figures/Brownian_CCDF_Collapse_2.png, id=394, 953.4822pt x 345.9324pt>
+<figures/Brownian_CCDF_Collapse_2.png, id=283, 953.4822pt x 345.9324pt>
 File: figures/Brownian_CCDF_Collapse_2.png Graphic file (type png)
 <use figures/Brownian_CCDF_Collapse_2.png>
-Package pdftex.def Info: figures/Brownian_CCDF_Collapse_2.png  used on input line 202.
+Package pdftex.def Info: figures/Brownian_CCDF_Collapse_2.png  used on input line 185.
 (pdftex.def)             Requested size: 448.13095pt x 162.58296pt.
-<figures/Brownian_CCDF_Collapse_3.png, id=395, 896.6298pt x 346.1733pt>
+
+
+[24 <./figures/bubble(MSD)_count_over_time.png> <./figures/Brownian_CCDF_Collapse_1.png>]
+<figures/Brownian_CCDF_Collapse_3.png, id=294, 896.6298pt x 346.1733pt>
 File: figures/Brownian_CCDF_Collapse_3.png Graphic file (type png)
 <use figures/Brownian_CCDF_Collapse_3.png>
-Package pdftex.def Info: figures/Brownian_CCDF_Collapse_3.png  used on input line 209.
+Package pdftex.def Info: figures/Brownian_CCDF_Collapse_3.png  used on input line 192.
 (pdftex.def)             Requested size: 448.13095pt x 173.01227pt.
-
-
-[27 <./figures/ccdf_logreturns_1.png> <./figures/logreturn_ccdf_collapse2.png> <./figures/Brownian_CCDF_Collapse_2.png>]
-<figures/Brownian_CCDF_Collapse_4.png, id=404, 919.2744pt x 350.9913pt>
+<figures/Brownian_CCDF_Collapse_4.png, id=295, 919.2744pt x 350.9913pt>
 File: figures/Brownian_CCDF_Collapse_4.png Graphic file (type png)
 <use figures/Brownian_CCDF_Collapse_4.png>
-Package pdftex.def Info: figures/Brownian_CCDF_Collapse_4.png  used on input line 216.
+Package pdftex.def Info: figures/Brownian_CCDF_Collapse_4.png  used on input line 199.
 (pdftex.def)             Requested size: 448.13095pt x 171.10355pt.
-<figures/displacement_overlay_shifted_peaks_invest.png, id=405, 562.5015pt x 419.166pt>
+
+
+[25 <./figures/Brownian_CCDF_Collapse_2.png> <./figures/Brownian_CCDF_Collapse_3.png>]
+<figures/displacement_overlay_shifted_peaks_invest.png, id=305, 562.5015pt x 419.166pt>
 File: figures/displacement_overlay_shifted_peaks_invest.png Graphic file (type png)
 <use figures/displacement_overlay_shifted_peaks_invest.png>
-Package pdftex.def Info: figures/displacement_overlay_shifted_peaks_invest.png  used on input line 225.
+Package pdftex.def Info: figures/displacement_overlay_shifted_peaks_invest.png  used on input line 208.
 (pdftex.def)             Requested size: 219.58662pt x 163.62758pt.
-<figures/ccdf_displacement_components_invest.png, id=406, 560.8152pt x 418.6842pt>
+<figures/ccdf_displacement_components_invest.png, id=306, 560.8152pt x 418.6842pt>
 File: figures/ccdf_displacement_components_invest.png Graphic file (type png)
 <use figures/ccdf_displacement_components_invest.png>
-Package pdftex.def Info: figures/ccdf_displacement_components_invest.png  used on input line 230.
+Package pdftex.def Info: figures/ccdf_displacement_components_invest.png  used on input line 213.
 (pdftex.def)             Requested size: 219.58662pt x 163.93143pt.
 
 
-[28 <./figures/Brownian_CCDF_Collapse_3.png> <./figures/Brownian_CCDF_Collapse_4.png>]
+Class scrartcl Warning: Incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input line 219.
 
-[29 <./figures/displacement_overlay_shifted_peaks_invest.png> <./figures/ccdf_displacement_components_invest.png>] (./thesis_draft_1.aux)
+<figures/dispacf.png, id=307, 433.62pt x 289.08pt>
+File: figures/dispacf.png Graphic file (type png)
+<use figures/dispacf.png>
+Package pdftex.def Info: figures/dispacf.png  used on input line 222.
+(pdftex.def)             Requested size: 448.13095pt x 298.77025pt.
+
+
+[26 <./figures/Brownian_CCDF_Collapse_4.png> <./figures/displacement_overlay_shifted_peaks_invest.png> <./figures/ccdf_displacement_components_invest.png>]
+
+[27 <./figures/dispacf.png>] (./thesis_draft_1.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `thesis_draft_1.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `thesis_draft_1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis_draft_1.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                thesis_draft_1
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'thesis_draft_1.run.xml'.
 \openout1 = `thesis_draft_1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27254 strings out of 473190
- 479173 string characters out of 5715800
- 1441290 words of memory out of 5000000
- 50016 multiletter control sequences out of 15000+600000
+ 27221 strings out of 473190
+ 478218 string characters out of 5715800
+ 1544950 words of memory out of 5000000
+ 49994 multiletter control sequences out of 15000+600000
  638430 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,107p,10975b,2210s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb>
-Output written on thesis_draft_1.pdf (29 pages, 9626447 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb>
+Output written on thesis_draft_1.pdf (27 pages, 8954886 bytes).
 PDF statistics:
- 588 PDF objects out of 1000 (max. 8388607)
- 469 compressed objects within 5 object streams
- 153 named destinations out of 1000 (max. 500000)
- 383 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 486 PDF objects out of 1000 (max. 8388607)
+ 377 compressed objects within 4 object streams
+ 150 named destinations out of 1000 (max. 500000)
+ 373 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,8 +1,4 @@
 \section{Background Theory} \label{sec:theoreticalbackground}
-\subsection{Foam Physics}
-\textcolor{red}{coordination number}
-
-
 
 \subsection{Brownian Motion}
 Brownian motion refers to the random movement of particles suspended in a fluid due to the cumulative effect of many independent collisions with the surrounding particles or molecules. This phenomenon was first observed by the botanist Robert Brown in 1827, who noticed pollen grains moving erratically in water.
@@ -30,6 +26,7 @@ However, the main problem with looking at the price change in an asset is that i
 
 \begin{equation}
     r(t, \delta t) = \ln\left(\frac{s(t+\delta t)}{s(t)}\right) = \ln(s(t+\delta t)) - \ln(s(t))
+    \label{eq:lr_def}
 \end{equation}
 
 The log returns are now seen to be additive.
@@ -54,34 +51,36 @@ We can define the volatility as the absolute value of the log returns \cite{rich
 
 This can directly be applied to our bubble displacements, intuitively applied as a measure of how strong the fluctuations in the magnitude of the bubble displacements are. We can use this to investigate whether there are periods of high volatility in the bubble motion, and whether these periods are correlated with other properties of the foam such as the coordination number or area of the bubbles.
 
-\subsubsection{Temporal Autocorrelation}
-A temporal correlation is a measure of how a variable $x$ at time $t$ is influencing its value at a time $t + \tau$. I always like the example of rolling across the room in a rolling chair. If I push off one wall while sitting in the chair, my position at that time is highly correlated with my position a second later, however that evening where I am writing my capstone thesis has nothing to do with whether I was rolling in a chair or not, in other words my position then is completely uncorrelated to my position when I rolled the chair.\\
+\subsubsection{Temporal Autocorrelation} \label{sec:temp_acf_def}
+A temporal correlation is a measure of how a variable $x$ at time $t$ is influencing its value at a time $t + \tau$. An intuitive example is rolling across the room in a rolling chair. If I push off one wall while sitting in the chair, my position at that time is highly correlated with my position a second later, however that evening where I am writing my capstone thesis has nothing to do with whether I was rolling in a chair or not, in other words my position then is completely uncorrelated to my position when I rolled the chair.\\
 
-This correlation measure is given by evaluating the \textit{autocorrelation function}, $G(\tau)$, defined as \cite{richmond2013econophysics}:
+This correlation measure is given by evaluating the \textit{normalised autocorrelation function}, $R(\tau)$, defined as:
 \begin{equation}
-    G(\tau) = \langle x(t)x(t+\tau) \rangle = \lim_{T \rightarrow \infty} \frac{1}{T} \int_{0}^{T} x(t)x(t+\tau)dt
+    R(\tau) = \langle (x(t) -  \langle x(t) \rangle )(x(t+\tau) - \langle x(t+\tau) \rangle) \rangle/(\sigma_{t}\sigma_{t+\tau})
+    \label{eq:norm_acf}
 \end{equation}
+provided the standard deviation, $\sigma_t = \sqrt{\langle x^2(t) \rangle - \langle x(t) \rangle^2}$ is non-zero and finite \cite{richmond2013econophysics}.\\
 
-Temporal autocorrelation can be applied in a financial market, the Dow Jones Industrial Average in this case. Figure \ref{fig:DJIA_autocorr} shows that there is no correlation in the daily return, however the autocorrelation function of the volatility follows a power law.
+Temporal autocorrelation can be applied in a financial market, the Dow Jones Industrial Average in this case. Figure \ref{fig:DJIA_autocorr} shows that the correlation drops quickly to zero and fluctuates around there in the daily return, however the autocorrelation function of the volatility follows a power law.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{figures/DJIA_auto_ret_vol.png}
-    \caption{Dow Jones Industrial Average, autocorrelation of daily returns fluctuate around zero, autocorrelation of the volatility follows a power law.}
+    \caption{Dow Jones Industrial Average, autocorrelation of daily returns fluctuate around zero, autocorrelation of the volatility follows a power law. \cite{richmond2013econophysics}}
     \label{fig:DJIA_autocorr}
 \end{figure}
 
 
-This can be directly applied to our bubble sampleto see how long to the bubble displacements stay correlated for or if there is there any correlation at all after a topological restructure event.
+This can be directly applied to our bubble sample to see how long to the bubble displacements stay correlated for or if there is there any correlation at all after a topological restructure event.
 
 
 \subsection{Statistical Tools}
 \subsubsection{Mean Squared Displacement}
-Mean Squared Displacement (MSD) is a measure of the average squared distance that a particle travels over a given time interval. It is commonly used in physics and chemistry to study the motion of particles in a fluid or gas. The MSD is defined as:
+Mean Squared Displacement (MSD) is a measure of the average squared distance travelled over a given time interval. It is commonly used in physics and chemistry to study the motion of particles in a fluid or gas. The MSD is defined as:
 \begin{equation}
     \text{MSD}(\delta t) = \langle (\delta r(t, \delta t))^2 \rangle = \frac{1}{N} \sum_{i=1}^{N} (\delta r_i(t, \delta t))^2
 \end{equation}
-where $\delta r_i(t, \delta t)$ is the displacement of the $i$-th particle at time $t$ over a time interval $\delta t$, and $N$ is the total number of particles. The MSD can provide insight into the underlying dynamics of the system, such as whether the motion is diffusive, subdiffusive, or superdiffusive. For example, in a purely diffusive system, the MSD scales linearly with time (MSD $\propto \delta t$), while in a subdiffusive system, the MSD scales slower than linearly (MSD $\propto \delta t^\alpha$ with $\alpha < 1$), and in a superdiffusive system, the MSD scales faster than linearly ($MSD \propto \delta t^\alpha$ with $\alpha > 1$). \textcolor{red}{Rewrite Definition: tabbed through copilot suggestion}\\
+where $\delta r_i(t, \delta t)$ is the displacement of the $i$-th particle at time $t$ over a time interval $\delta t$, and $N$ is the total number of particles. The MSD can provide insight into the underlying dynamics of the system, such as whether the motion is diffusive, subdiffusive, or superdiffusive. For example, in a purely diffusive system, the MSD scales linearly with time (MSD $\propto \delta t$), while in a subdiffusive system, the MSD scales slower than linearly (MSD $\propto \delta t^\alpha$ with $\alpha < 1$), and in a superdiffusive system, the MSD scales faster than linearly ($MSD \propto \delta t^\alpha$ with $\alpha > 1$). \textcolor{red}{Rewrite Definition: following Wikipedia source, need a better source}\\
 
 For Brownian motion, as described by Einstein in his 1905 paper , the MSD scaled linearly with time following the diffusion law \cite{EinsteinMSD}:
 
@@ -97,17 +96,17 @@ The displacement of a bubble over a time $\delta t$ is given by:
 \begin{equation}
     \delta r(t, \delta t) = r(t+\delta t) - r(t)
 \end{equation}
-Analysing these displacements in different ways will give us insight into the underlying statistical properties of the bubble motion. In this case, we can make a displacement distribution and vary $\delta t$ to see how the distribution changes looking at different timelags, looking at every timestep, every 10 timesteps, every 100 timesteps etc.\\
+Analysing these displacements in different ways will give insight into the underlying statistical properties of the bubble motion, comparing with Brownian distributions to characterise randomness for example. In this case, varying the time lag $\Delta t$ to see how the distribution changes will reveal information about the statistics of the dynamics of these bubbles.\\
 
 
 \subsubsection{Complementary Cumulative Distribution Function}
-When investigating the log returns of a financial market, a key underlying statistical property of the probability density is that if we vary $\Delta t$ the distribution scales according to a Levy distribution.\\
+When investigating the log returns of a financial market, a key underlying statistical property of the probability density is that if we vary $\Delta t$ the distribution scales according to a Lévy distribution.\\
 
 Figure \ref{ccdf process}a is the probablility distribution functions for the log returns over different $\Delta t$, all overlayed on one plot with the axes shifted for visual purposes. The complementary cumulative distribution function (CCDF), see figure \ref{ccdf process}b is obtained by integrating the probability distribution functions (PDF) for $|x| > x$ giving the probability the log returns are greater than a certain value for each $\Delta t$ PDF curve.\\
 
-A property of scaling according to a Levy distribution is that if you take a cut at a certain probability on the CCDF curve, is that it is independent of where the cut is taken as seen in figure \ref{ccdf process}c where the cut, normalised to the $\Delta t = 1$ cut, increases linearly with $\Delta t$.\\
+A property of scaling according to a Lévy distribution is that if you take a cut at a certain probability on the CCDF curve, is that it is independent of where the cut is taken as seen in figure \ref{ccdf process}c where the cut, normalised to the $\Delta t = 1$ cut, increases linearly with $\Delta t$.\\
 
-Finally, the slope of this linear plot can be used to scale the x axis of the original plot (\ref{ccdf process}a) by plotting over the x axis, $x^\prime = x/\Delta t ^\beta$, resulting in the collapse of all PDFs onto one \textit{master curve} (Figure \ref{ccdf process}d). A Levy curve can be fit to the peak of this plot using a Levy fit parameter of $\alpha = 1/\beta$\\
+Finally, the slope of this linear plot can be used to scale the x axis of the original plot (\ref{ccdf process}a) by plotting over the x axis, $x^\prime = x/\Delta t ^\beta$, resulting in the collapse of all PDFs onto one \textit{master curve} (Figure \ref{ccdf process}d). A Lévy curve can be fit to the peak of this plot using a Lévy fit parameter of $\alpha = 1/\beta$\\
 
 \begin{figure}[h]
     \centering
@@ -116,4 +115,4 @@ Finally, the slope of this linear plot can be used to scale the x axis of the or
     \label{ccdf process}
 \end{figure}
 
-It would be interesting to apply to the bubble displacements and log returns to see if they also scale according to a Levy distribution, if so, what would the scaling exponent be? If not, it is worth investigating what he underlying scaling properties are. One consideration before we perform this analysis is that a key difference between these financial markets and the foam is that as the foam coarsens the number of bubbles decrease over time, whereas there is constantly an abundance of data for the financial log returns.\\
+It would be interesting to apply to the bubble displacements and log returns to see if they also scale according to a Lévy distribution, if so, what would the scaling exponent be? If not, it is worth investigating what he underlying scaling properties are. It is worth noting, a key difference between these financial markets and the foam, is that as the foam coarsens the number of bubbles decrease over time, whereas there is constantly an abundance of data for the financial log returns.\\

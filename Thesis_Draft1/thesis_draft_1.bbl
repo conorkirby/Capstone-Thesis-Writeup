@@ -39,6 +39,83 @@
     \field{year}{1905}
   \endentry
 
+  \entry{MatplotlibECDF}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Matplotlib Development Team}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Cumulative Distributions --- Matplotlib Documentation}
+    \verb{url}
+    \verb https://matplotlib.org/stable/gallery/statistics/histogram_cumulative
+    \verb .html
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{PINSKY2011391}{incollection}{}{}
+    \name{author}{2}{}{%
+      {{hash=PMA}{%
+         family={Pinsky},
+         familyi={P\bibinitperiod},
+         given={Mark\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Karlin},
+         familyi={K\bibinitperiod},
+         given={Samuel},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=PMA}{%
+         family={Pinsky},
+         familyi={P\bibinitperiod},
+         given={Mark\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Karlin},
+         familyi={K\bibinitperiod},
+         given={Samuel},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press}%
+    }
+    \strng{namehash}{PMAKS1}
+    \strng{fullhash}{PMAKS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{An Introduction to Stochastic Modeling (Fourth Edition)}
+    \verb{doi}
+    \verb https://doi.org/10.1016/B978-0-12-381416-6.00008-3
+    \endverb
+    \field{edition}{Fourth Edition}
+    \field{isbn}{978-0-12-381416-6}
+    \field{pages}{391\bibrangedash 446}
+    \field{title}{8 - Brownian Motion and Related Processes}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/B978012381416600008
+    \verb 3
+    \endverb
+    \list{location}{1}{%
+      {Boston}%
+    }
+    \field{year}{2011}
+  \endentry
+
   \entry{richmond2013econophysics}{book}{}{}
     \name{author}{3}{}{%
       {{hash=RP}{%
