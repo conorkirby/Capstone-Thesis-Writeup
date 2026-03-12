@@ -1,6 +1,6 @@
 \documentclass[paper=a4, fontsize=12pt]{scrartcl} % A4 paper and 12pt font size
-%\usepackage{setspace}
-%\onehalfspacing
+\usepackage{setspace}
+\onehalfspacing
 
 %\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 %\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
@@ -18,11 +18,24 @@
 \pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
 \fancyhead{} % No page header - if you want one, create it in the same way as the footers below
 \fancyfoot[L]{} % Empty left footer
-\fancyfoot[C]{} % Empty center footer
-\fancyfoot[R]{\thepage} % Page numbering for right footer
+\fancyfoot[C]{\thepage} % Empty center footer
+\fancyfoot[R]{} % Page numbering for right footer
 \renewcommand{\headrulewidth}{0pt} % Remove header underlines
 \renewcommand{\footrulewidth}{0pt} % Remove footer underlines
 \setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\newcommand{\thesistitle}{Using Statistical Methods from Econophysics to Analyse Bubble Motion in a Two-Dimensional Foam} % Your thesis title, this is used in the title and abstract
+\newcommand{\degree}{B.A. Theoretical Physics} % Your degree name, this is used in the title page and abstract
+\newcommand{\typeofthesis}{Capstone Thesis} % dissertation, Final Year Project, report, etc.
+\newcommand{\authorname}{Conor Kirby}
+\newcommand{\school}{School of Physics}
+
+\AtBeginDocument{
+\hypersetup{pdftitle=\thesistitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+\hypersetup{pdfsubject=\degree} % Set the PDF's keywords to your keywords
+}
+
 
 \numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
 \numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
@@ -77,22 +90,18 @@
 
 \newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
 
-\title{	
-\normalfont \normalsize 
-\textsc{Draft 1: Final Year Thesis} \\ [25pt] % Your university, school and/or department name(s)
-\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
-\huge Using Statistical Methods from Econophysics to Analyse Bubble Motion in a Two-Dimensional Foam \\ % The assignment title
-\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
-}
 
-\author{Conor Kirby \\[5pt]
-\normalsize Supervisor: Professor Stefan Hutzler} % Your name
+
+\title{\thesistitle}
+\author{\authorname}
+
+\author{\Large \normalfont Conor Kirby \\[5pt]} % Your name
 
 \date{\normalsize\today} % Today's date or a custom date
 
 
 \begin{document}
-\maketitle
+\input{chapters/00_title.tex}
 \newpage
 \input{chapters/01_abstract.tex}
 \newpage
@@ -185,20 +194,6 @@ def scalar_acf_direct_nonstationary(x, max_lag=None):
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{figures/ccdf_logreturns_1.png}
-    \caption{Log return distributions and CCDF curve as procedure}
-    \label{fig:lr_collapse_1}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{figures/logreturn_ccdf_collapse2.png}
-    \caption{Log returns follow the same CCDF scaling as the displacements}
-    \label{fig:lr_collapse_2}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
     \includegraphics[width=\textwidth]{figures/Brownian_CCDF_Collapse_2.png}
     \caption{CCDF for Brownian Displacement Distibutions and Log-Returns Distibutions}
     \label{fig:BrownCCDF2}
@@ -216,6 +211,20 @@ def scalar_acf_direct_nonstationary(x, max_lag=None):
     \includegraphics[width=\textwidth]{figures/Brownian_CCDF_Collapse_4.png}
     \caption{Using $\beta = 0.5$ slope to scale the x axis of the original distribution plots, all distributions collaps onto the one master plot as intended}
     \label{fig:BrownCCDF4}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/ccdf_logreturns_1.png}
+    \caption{Log return distributions and CCDF curve as procedure}
+    \label{fig:lr_collapse_1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/logreturn_ccdf_collapse2.png}
+    \caption{Log returns follow the same CCDF scaling as the displacements}
+    \label{fig:lr_collapse_2}
 \end{figure}
 
 \begin{figure}[H]
